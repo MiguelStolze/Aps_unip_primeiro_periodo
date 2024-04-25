@@ -73,6 +73,10 @@ body {
   opacity: 1; /* Define opacidade para 1 quando a li está ativa */
 }
 
+.menu li.activeLi {
+  opacity: 0;
+}
+
 .menu.active li:nth-child(2) {
   transform: rotate(0deg) translateY(-210px);
 }
@@ -124,8 +128,4 @@ body {
 }
 .menu.active li:nth-child(18) {
   transform: rotate(338deg) translateY(-210px);
-}
-
-.menu.active li:nth-child(2).active {
-  transform: rotate(180deg) scale(1.2) translateY(-210px); /* Rotaciona e aumenta o tamanho */
 }
